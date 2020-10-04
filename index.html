@@ -76,13 +76,13 @@ background-attachment: fixed;"
 <div id="gitalk-container"></div>
 <script type="text/javascript">
 var gitalk = new Gitalk({
-    clientID: 'f484944d59cca5e34a81',
-    clientSecret: '1eb1f2f3c62e5d1cee9d6674fd3960ebbf69f541',
-    repo: 'xinxin1123pinglun',
-    owner: 'xinxin1123',
-    admin: ['xinxin1123'],
-    id: location.pathname,
-    distractionFreeMode: false
+  clientID: 'f484944d59cca5e34a81',
+  clientSecret: '1eb1f2f3c62e5d1cee9d6674fd3960ebbf69f541',
+  repo: 'xinxin1123pinglun',
+  owner: 'xinxin1123',
+  admin: ['xinxin1123'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
 })
 
 gitalk.render('gitalk-container')
